@@ -19,3 +19,5 @@ Route::get('/', [PageController::class, 'homepage']);
 Route::get('/dashboard', [PageController::class, 'dashboard']);
 Route::get('/profile', [PageController::class, 'profile']);
 Route::get('/settings', [PageController::class, 'settings']);
+
+Route::resource('posts', PostController::class);
